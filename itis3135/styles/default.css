@@ -8,11 +8,7 @@ body.introduction main {
     background-image: radial-gradient(circle at 50% 33%, #f3bd59, #78079b, #7915d6);
 }
 
-body.contract main {
-    background-image: radial-gradient(circle at 50% -33%, #f3bd59, #78079b, #7915d6);
-}
-
-body.index main {
+main {
     background-image: radial-gradient(circle at 50% -33%, #f3bd59, #78079b, #7915d6);
 }
 
@@ -28,6 +24,7 @@ main {
     border-inline: 20px solid #ffffff;
     border-inline-style: double;
     box-shadow: 20px 10px 20px #000000;
+    line-height: 1.6;
 }
 
 
@@ -45,11 +42,11 @@ ul {
 
 a {
     color:antiquewhite;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
-    color:darkred;
+    color:lightgray;
     text-decoration: underline;
 }
 
@@ -64,4 +61,16 @@ h2 {
 
 img{
     width: 30%
+}
+
+h2 {
+  display: inline-block;      
+  animation: moving 6s ease-in-out infinite;
+  will-change: transform;      
+}
+
+@keyframes moving {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); } 
+  100% { transform: translateY(0); }
 }
