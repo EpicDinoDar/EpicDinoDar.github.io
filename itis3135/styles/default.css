@@ -12,11 +12,34 @@ main {
     background-image: radial-gradient(circle at 50% -33%, #f3bd59, #78079b, #7915d6);
 }
 
+@media screen and (max-width: 600px) { /* mobile */
+  main {
+    width: 95%;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.5rem;
+    background: #f0f8ff;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){ /* tablet/small pc */
+    main{
+        width: 85%;
+        max-width: 960px;
+    }
+}
+@media screen and (min-width: 1200px){ /* desktop */
+    main {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
 
 
 main {
     width:50%;
     margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
     text-align: center;
     background-color: #9a7ac2;
     padding: 30px;
