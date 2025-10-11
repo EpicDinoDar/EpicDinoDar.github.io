@@ -97,3 +97,44 @@ h2 {
   50%  { transform: translateY(-8px); } 
   100% { transform: translateY(0); }
 }
+
+table {
+  border-collapse: collapse;
+  margin: 1.5em auto;
+  width: 95%;
+  background: #b48fd3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+th, td {
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+thead th {
+  background: #333;
+  color: rgb(255, 255, 255);
+}
+
+tfoot td {
+  background: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+  background: #d3a5ff;
+}
+
+th:first-child {
+  border-top-left-radius: 30px;
+}
+
+th:last-child {
+  border-top-right-radius: 30px;
+}
+
+
+
