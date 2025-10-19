@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Site </title>
+    <link rel="stylesheet" type="text/css" href="cool.css" />
+    <script>
+    function showSection(id) {
+        document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/gengar-osu.gif" alt="Gengar Dancing" width="150" class="gif-left"/>
+        <h1>The Pokemon Card Hobby</h1>
+        <img src="images/gengar-osu.gif" alt="Gengar Dancing" width="150" class="gif-right"/>
+        <nav>
+        <a href="#" onclick="showSection('who')">🃏 Who 🃏</a>
+        <a href="#" onclick="showSection('what')">🃏 What 🃏</a>
+        <a href="#" onclick="showSection('when')">🃏 When 🃏</a>
+        <a href="#" onclick="showSection('where')">🃏 Where 🃏</a>
+        <a href="#" onclick="showSection('how')">🃏 How 🃏</a>
+        <a href="#" onclick="showSection('why')">🃏 Why 🃏</a>
+        <a href="#" onclick="showSection('ai')">🃏 AI Prompts 🃏</a>
+        </nav>
+    </header>
+    <main>
+        <section id="who">
+            <h2><span class="c67">Who</span> collects Pokemon Cards?</h2>
+            <p>Nowadays, its not only just kids that collect these shiny pieces of cardboard, but also adults! <br><br>From people that used to collect cards back when it first came out in the late 90's, kids that grew up watching the show, and parents passing on their love of Pokemon to their kids!</p>
+            <p></p>Now, lets dive into the many type of people that collect Pokemon Cards and why they do it:</p>
+            <table>
+            <thead>
+                <tr>
+                    <th>Collector</th>
+                    <th>Incentive</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Casual</td>
+                    <td>Collect for the fun of it, nostalgia, or because Pokemon is special to them</td>
+                </tr>
+                <tr>
+                    <td>Competitive</td>
+                    <td>Collect to build playable decks to battle other players in matches/tournaments</td>
+                </tr>
+                <tr>
+                    <td>Investor</td>
+                    <td>Collect cards with the idea they will go up in value over time and eventually sell</td>
+                </tr>
+                <tr>
+                    <td>Master Set'er</td>
+                    <td>Collect every card in a set or series to have a complete collection</td>
+                </tr>
+                <tr>
+                    <td>Vendor</td>
+                    <td>Collect to resell cards/sealed product for profit and use the profit to get more cards</td>
+                </tr>
+            </tbody>
+            </table>
+            <p></p>
+            <legend>What type of collector would you be?</legend>
+            <input type="radio" id="collector1" name="collector-type">
+            <label for="collector1">Casual</label>
+            <input type="radio" id="collector2" name="collector-type">
+            <label for="collector2">Competitive</label>
+            <input type="radio" id="collector3" name="collector-type">
+            <label for="collector3">Investor</label>
+            <input type="radio" id="collector4" name="collector-type">
+            <label for="collector4">Master Set'er</label>
+            <input type="radio" id="collector5" name="collector-type">
+            <label for="collector5">Vendor</label>
+            <br><br>
+            <button type="submit">Submit</button>
+
+        </section>
+        <section id="what" class="active">
+            <h2><span class="c67">What</span> is Pokemon Card Collecting?</h2>
+            <p> Pokemon card collecting is hobby purely centered around colecting cards, trading cards, and selling cards!
+                <br>
+                <p></p>These cards have different rarities and feasabilty to find them and their value can depend on many factors like demand, condition, pull rates, and rarity.</p>
+            <figure>
+                <img src="images/reshizekrom.jpg" alt="My collection of Reshiram and Zekrom Cards" width="900" />
+                <figcaption><em>My collection of Reshiram and Zekrom Cards :D</em></figcaption>
+            </figure>
+            <p></p>
+            <legend>Do you have a favorite Pokemon?</legend>
+            <input type="text" id="fav-poke" name="fav-poke" placeholder="eg. Pikachu">
+            <br>
+            <button type="submit">Submit</button>
+        </section>
+        <section id="when">
+            <h2><span class="c67">When</span> is the best time to collect?</h2>
+            <figure>
+                <img src="images/time-ticking.png" alt="a rabbit pointing at his watch" width="200" class="gif-left"/>
+                <figcaption class="think"><em>time is ticking</em></figcaption>
+            </figure>
+            <p>The best time to collect Pokemon Cards is honestly hard to tell depending on what kind of collector you are, but in general, it can either be:</p>
+            <ol>
+                <li>Whenever the hobby is not too popular in order to get the cards you want before the hype</li>
+                <li>During a new set to get the newest cards in the series</li>
+                <li>Whenever you want!</li>
+            </ol>
+            <p></p>
+            <legend>When did you start collecting?</legend>
+            <br>
+            <input type="radio" id="kid-option" name="card-collect">
+            <label for="kid-option">When I was a kid</label>
+            <input id="r-option" type="radio" name="card-collect" />
+            <label for="r-option">Recently</label>
+            <input id="while-option" type="radio" name="card-collect" />
+            <label for="while-opton">A while ago</label>
+            <input id="never-option" type="radio" name="card-collect" />
+            <label for="never-option">I don't collect</label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </section>
+        <section id="where">
+            <h2><span class="c67">Where</span> to collect Pokemon Cards?</h2>
+            <figure>
+                <img src="images/card-show.jpg" alt="A card show I went to back in June" width="400" />
+                <figcaption><em>A Pokemon Card Show</em></figcaption>
+            </figure>
+            <p>There are many places to get Pokemon Cards nowadays, although many desirable sets may be difficult to find because of the recent hype in the hobby.</p>
+            <p></p>These places include:</p>
+            <ul>
+                <li>Local Card Shops</li>
+                <li>Big Box Retailers (Walmart, Target, etc.)</li>
+                <li>Online Marketplaces (eBay, TCGPlayer, Facebook Marketplace etc.)</li>
+                <li>Card Shows</li>
+                <li>Trading with others</li>
+            </ul>
+            <p></p>However, it is important to take notes of fakes when buying online or trading with others, and do your research!</p>
+        </section>
+        <section id="how">
+            <h2><span class="c67">How</span> can soemone start collecting?</h2>
+            <figure>
+                <img src="images/monkey-think.jpg" alt="a monkey thinking" width="200" class="gif-left"/>
+                <figcaption class="think"><em>a funny monkey thinking</em></figcaption>
+            </figure>
+            <p>Starting a Pokemon Card collection is easy! All it takes is some passion towards a goal you have set for the hobby, and a couple of cards to start off your trading journey!
+            <p></p><legend>Are you going to start collecting now?</legend>
+            <label for="yes-option">Yes</label>
+            <input type="radio" id="yes-option" name="poke"> 
+            <label for="no-option">No</label>
+            <input id="no-option" type="radio" name="poke" />
+            <br><br>
+            <button type="submit">Submit</button>
+        </section>
+        <section id="why">
+            <h2><span class="c67">Why</span> collect Pokemon Cards?</h2>
+            <figure>
+                <img src="images/char.gif" alt="Charizard Dancing" width="200" class="gif-left"/>
+                <figcaption class="char"><em>charizard geting groovy</em></figcaption>
+            </figure>
+            <h5>BECAUSE YOU SHOULD!</h5>
+            <h5>NOW!</h5>
+            <h5>Let the addiction simmer up inside of you, young one. Let it manifest into something TRULY blasphemous!
+                Become one with the Pokemon card. Think like a Pokemon card, see like a Pokemon card. BECOME THE POKEMON CARD!</h5>
+            <figure>
+                <img src="images/char.gif" alt="Charizard Dancing" width="200" class="gif-left"/>
+                <figcaption class="char"><em>charizard geting groovy #2</em></figcaption>
+            </figure>
+            <p></p>
+            <label for="service">From 1 to 5, how likely are you to start collecting now?</label>
+            <select name="service" id="service"> 
+                <option value="poor">1</option> 
+                <option value="satisfactory">2</option>
+                <option value="good">3</option>
+                <option value="very-good">4</option>
+                <option selected value="excellent">5</option> 
+            </select>
+            <button type="submit">Submit</button>
+        </section>
+        <section id="ai">
+            <h2><span class="c67">AI Prompts</span> I used for the website</h2>
+            <p>Here are some AI prompts I used for the hiding the sections for the site:</p>
+            <ul>
+                <li><p>CHATGPT Prompt: "Make a JavaScript function that hides all section elements and only adds an active class to the one I specify by ID."</p></li>
+                <li><p>CHATGPT Prompt: "Make me a nav in HTML with links that each call the showSection() for sections with IDs who, what, when, where, how, and why."</p></li>
+            </ul>
+            <h4>The rest of the website was created either with the help of googling CSS methods or by myself figuring and testing things out.</h4>
+            
+
+        </section>
+    </main>
+    <footer>
+        <p class="d67">Page designed by <a href="https://webpages.charlotte.edu/pparmar2/itis3135/parmardev-inc.com/">ParmarDev-Inc</a></p>
+        <a href="https://validator.w3.org/check?uri=referer">HTML Validator</a>
+        <span> | </span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS Validator</a>
+    </footer>
+</body>
+</html> 
