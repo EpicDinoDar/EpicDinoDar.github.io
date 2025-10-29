@@ -12,6 +12,21 @@ main {
     background-image: radial-gradient(circle at 50% -33%, #f3bd59, #78079b, #7915d6);
 }
 
+main {
+    width:50%;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+    background-color: #9a7ac2;
+    padding: 30px;
+    border-radius: 100px;
+    border-inline: 20px solid #ffffff;
+    border-inline-style: double;
+    box-shadow: 20px 10px 20px #000000;
+    line-height: 1.6;
+}
+
 @media screen and (max-width: 600px) { /* mobile */
   main {
     width: 95%;
@@ -35,20 +50,7 @@ main {
 }
 
 
-main {
-    width:50%;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-    text-align: center;
-    background-color: #9a7ac2;
-    padding: 30px;
-    border-radius: 100px;
-    border-inline: 20px solid #ffffff;
-    border-inline-style: double;
-    box-shadow: 20px 10px 20px #000000;
-    line-height: 1.6;
-}
+
 
 
 
