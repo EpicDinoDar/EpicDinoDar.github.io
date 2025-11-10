@@ -1,0 +1,182 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Parmar's Pissing Pangolin | ITIS3135 | Intro Form </title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/default.css" />
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Intro Form</h2>
+        <h3>Please submit the form below.</h3>
+        <form>
+            <label for="first_name">First Name:</label><br>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" value="Parth" required><br><br>
+            <label for="middle_name">Middle Name or Initial:</label><br>
+            <input type="text" id="middle_name" name="middle_name" placeholder="Enter your middle name or initial (optional)"><br><br>
+            <label for="nickname">Nickname/Preferred Name:</label><br>
+            <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname or preferred name (optional)"><br><br>
+            <label for="last_name">Last Name:</label><br>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" value="Parmar" required><br><br>
+            <label for="acknowledgement_statement">Acknowledgement Statement:</label><br>
+            <input type="text" id="acknowledgement_statement" name="acknowledgement_statement" placeholder="Enter your acknowledgement statement" value="I, Parth Parmar agree to abide by the terms of the course contract in my Fall 2025, ITIS 3135, Front-End Web Dev with my instructor, Professor D.I. von Briesen.I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates." required><br><br>
+            <label for="acknowledgement_date">Acknowledgement Date:</label><br>
+            <input type="text" id="acknowledgement_date" name="acknowledgement_date" placeholder="Enter the date of acknowledgement" value="26/08/2025" required><br><br>
+            <label for="mascot_adjective">Mascot Adjective:</label><br>
+            <input type="text" id="mascot_adjective" name="mascot_adjective" placeholder="Enter an adjective for your mascot" value="Pissing" required><br><br>
+            <label for="mascot_animal">Mascot Animal:</label><br>
+            <input type="text" id="mascot_animal" name="mascot_animal" placeholder="Enter your mascot animal" value="Pangolin" required><br><br>
+            <label for="divider">Divider Symbol (e.g., ~, |, ♥️, etc):</label><br>
+            <input type="text" id="divider" name="divider" placeholder="Enter a divider symbol" value="|" required><br><br>
+            <label for="picture">Picture:</label><br>
+            <input type="file" id="picture" name="picture" accept="image/*"><br><br>
+            <label for="picture_caption">Picture Caption:</label><br>
+            <input type="text" id="picture_caption" name="picture_caption" placeholder="Enter a caption for your picture" value="A handsome fella at the Beach" required><br><br>
+            <label for="personal_statement">Personal Statement:</label><br>
+            <textarea id="personal_statement" name="personal_statement" placeholder="Write your personal statement here" rows="4" cols="50" required> Hey! My name is Parth. A lot of my hobbies include playing video games, watching shows, playing instruments, and collecting pokemon cards. Something I definitely need to work on is coding a lot more, mainly since during most summer breaks, I sort of just spend it doing nothing.</textarea><br><br>
+            <label for="personal_background">Personal Background:</label><br>
+            <textarea id="personal_background" name="personal_background" placeholder="Write about your personal background here" rows="4" cols="50" required>A UNCC student in my junior year. Born and raised in Charlotte, North Carolina. Did a Computer Science related internship after high school, professionally edited videos for a twitch streamer, built gaming computers for a small company called Optimist, and worked at Best Buy for around a year.</textarea><br><br>
+            <label for="academic_background">Academic Background:</label><br>
+            <textarea id="academic_background" name="academic_background" placeholder="Write about your academic background here" rows="4" cols="50" required>Have earned my associates degree at Cato Middle College High School. Currently, a junior at UNCC, majoring in Computer Science with a concentration in game development.</textarea><br><br>
+            <label for="primary_computer">Primary Computer:</label><br>
+            <input type="text" id="primary_computer" name="primary_computer" placeholder="Enter details about your primary computer" value="MSI, Windows 10, Laptop, Home/School" required><br><br>
+            <h4>Courses I’m taking & Why:</h4>
+            <div id="courses"></div>
+            <button type="button" onclick="addCourse()">Add Course</button><br><br>
+
+            <label for="quote">Favorite Quote:</label><br>
+            <input type="text" id="quote" name="quote" placeholder="Enter your favorite quote" value="“If you know how to add 99 numbers together, you will know how to add 100 numbers together.”" required><br><br>
+            <label for="quote_author">Quote Author:</label><br>
+            <input type="text" id="quote_author" name="quote_author" placeholder="Who said the quote?" value="Loc Nyugen" required><br><br>
+            <label for="funny_thing">Funny Thing (optional):</label><br>
+            <input type="text" id="funny_thing" name="funny_thing" placeholder="Share something funny about yourself" value="When I had to get two of my teeth removed by the dentist a few years back, they put me under anesthetics, but randomly I woke up from it and started vomiting all over the place, and then immediately fell asleep as soon as I was done vomiting and somehow they finished the removal. (I copied and pasted this from your previous class which I also copied and pasted from a class I took with you prior to that. I’m lazy)"><br><br>
+            <label for="something_to_share">Something I Would Like to Share (optional):</label><br>
+            <input type="text" id="something_to_share" name="something_to_share" placeholder="Share something interesting or personal" value="I’ve been collecting a lot of pokemon cards recently and vending at many card shows this summer, trying to build up my collection while also getting a bit of money on the side."><br><br>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clearBtn">Clear</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/introduction.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>-->
+<!--// Used the assistance of ChatGPT to help debug and improve my original html code for neatness purposes and making sure the id's properly assigned the with the js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parth Parmar's Pissing Pangolin | ITIS3135 | Intro Form</title>
+  <link rel="stylesheet" href="styles/default.css" />
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Intro Form</h2>
+    <h3>Please submit the form below.</h3>
+
+    <form id="introForm">
+      <label for="first_name">First Name:</label><br>
+      <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" value="Parth" required><br><br>
+
+      <label for="middle_name">Middle Name or Initial:</label><br>
+      <input type="text" id="middle_name" name="middle_name" placeholder="Enter your middle name or initial (optional)"><br><br>
+
+      <label for="nickname">Nickname/Preferred Name:</label><br>
+      <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname or preferred name (optional)" value="Pissing Pangolin"><br><br>
+
+      <label for="last_name">Last Name:</label><br>
+      <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" value="Parmar" required><br><br>
+
+      <label for="acknowledgement_statement">Acknowledgement Statement:</label><br>
+      <input type="text" id="acknowledgement_statement" name="acknowledgement_statement" placeholder="Enter your acknowledgement statement"
+        value='I, Parth Parmar agree to abide by the terms of the course contract in my Fall 2025, ITIS 3135, Front-End Web Dev with my instructor, Professor D.I. von Briesen. I understand that all work that I do on publicly available online tools will be available to the world...' required><br><br>
+
+      <label for="acknowledgement_date">Acknowledgement Date:</label><br>
+      <input type="text" id="acknowledgement_date" name="acknowledgement_date" placeholder="Enter the date of acknowledgement" value="26/08/2025" required><br><br>
+
+      <label for="mascot_adjective">Mascot Adjective:</label><br>
+      <input type="text" id="mascot_adjective" name="mascot_adjective" placeholder="Enter an adjective for your mascot" value="Pissing" required><br><br>
+
+      <label for="mascot_animal">Mascot Animal:</label><br>
+      <input type="text" id="mascot_animal" name="mascot_animal" placeholder="Enter your mascot animal" value="Pangolin" required><br><br>
+
+      <label for="divider">Divider Symbol (e.g., ~, |, ♥️, etc):</label><br>
+      <input type="text" id="divider" name="divider" placeholder="Enter a divider symbol" value="|" required><br><br>
+
+      <label for="pictureInput">Picture:</label><br>
+      <input type="file" id="pictureInput" name="picture" accept="image/*"><br><br>
+
+      <img id="preview-image" src="images/parth-at-the-beach.jpg" alt="Parth at the Beach" width="200">
+      <p><em>(A preview of the image selected will be shown above)</em></p><br>
+
+      <label for="picture_caption">Picture Caption:</label><br>
+      <input type="text" id="picture_caption" name="picture_caption" placeholder="Enter a caption for your picture" value="A handsome fella at the Beach" required><br><br>
+
+      <label for="personal_statement">Personal Statement:</label><br>
+      <textarea id="personal_statement" name="personal_statement" placeholder="Write your personal statement here" rows="4" cols="50" required>Hey! My name is Parth. A lot of my hobbies include playing video games, watching shows, playing instruments, and collecting pokemon cards...</textarea><br><br>
+
+      <label for="personal_background">Personal Background:</label><br>
+      <textarea id="personal_background" name="personal_background" placeholder="Write about your personal background here" rows="4" cols="50" required>A UNCC student in my junior year. Born and raised in Charlotte, North Carolina...</textarea><br><br>
+
+      <label for="academic_background">Academic Background:</label><br>
+      <textarea id="academic_background" name="academic_background" placeholder="Write about your academic background here" rows="4" cols="50" required>Have earned my associates degree at Cato Middle College High School...</textarea><br><br>
+
+      <label for="primary_computer">Primary Computer:</label><br>
+      <input type="text" id="primary_computer" name="primary_computer" placeholder="Enter details about your primary computer" value="MSI, Windows 10, Laptop, Home/School" required><br><br>
+
+      <h4>Courses I’m taking & Why:</h4>
+
+      <div id="courses">
+        <div class="course-item">
+          <input type="text" class="course-dept" name="course_dept" value="ITIS" required>
+          <input type="text" class="course-num" name="course_num" value="3135" required>
+          <input type="text" class="course-name" name="course_name" value="Front-End Web Application Development" required>
+          <input type="text" class="course-reason" name="course_reason" value="Sounded like a very important elective to take, and also taught by a professor I know and trust." required>
+          <button type="button" class="deleteCourseBtn">Delete</button>
+        </div>
+      </div>
+
+      <button type="button" id="addCourseBtn">Add Course</button><br><br>
+
+      <label for="quote">Favorite Quote:</label><br>
+      <input type="text" id="quote" name="quote" placeholder="Enter your favorite quote" value="If you know how to add 99 numbers together, you will know how to add 100 numbers together." required><br><br>
+
+      <label for="quote_author">Quote Author:</label><br>
+      <input type="text" id="quote_author" name="quote_author" placeholder="Who said the quote?" value="Loc Nyugen" required><br><br>
+
+      <label for="funny_thing">Funny Thing (optional):</label><br>
+      <input type="text" id="funny_thing" name="funny_thing" placeholder="Share something funny about yourself" value="When I had to get two of my teeth removed..."><br><br>
+
+      <label for="something_to_share">Something I Would Like to Share (optional):</label><br>
+      <input type="text" id="something_to_share" name="something_to_share" placeholder="Share something interesting or personal" value="I’ve been collecting a lot of pokemon cards recently..." ><br><br>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clearBtn">Clear</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/introduction.js"></script>
+</body>
+</html>
