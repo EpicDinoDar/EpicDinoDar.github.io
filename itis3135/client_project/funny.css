@@ -1,0 +1,286 @@
+/* Section visibility */
+section {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, height 0.4s ease;
+}
+section.active {
+    opacity: 1;
+    height: auto;
+}
+
+/* Typography */
+h1 {
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: rgb(199, 187, 187)
+}
+
+.c67 {
+    color: #ffe072;
+}
+
+/* Header container */
+header {
+    background: #2c2833;
+    padding: 3rem;
+    color: #fff;
+
+    border-radius: 30px;
+    border: 3px dashed #474350;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.char {
+    font-size: 0.8rem;
+    color: #bfbfbf;
+}
+
+/* Status/alert text */
+h5 {
+    font-size: 1.1rem;
+    color: #ff5959;
+    margin: 0;
+}
+
+/* Links */
+a {
+    color: #e7dd85;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    padding: 6px 14px;
+    margin-top: 1.2rem;
+
+    transition: 0.25s ease;
+}
+
+a:hover {
+    filter: brightness(1.2);
+    transform: translateY(-3px);
+}
+
+a:visited {
+    color: #d7cf70;
+}
+
+footer a:hover {
+    transform: translateY(2px) scale(0.95);
+}
+
+/* Shared Typography */
+header, main, footer {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* Footer */
+footer {
+    background: #2c2833;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+
+    border: 3px dashed #474350;
+    font-size: 0.85rem;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Page background */
+body {
+    background-color: #1c1922;
+    color: #fff;
+    background-image: linear-gradient(135deg, #1c1922, #555);
+}
+
+/* Lists */
+ul, ol {
+    max-width: 680px;
+    margin: 1.4rem auto;
+    list-style: square outside;
+    text-align: left;
+    line-height: 1.7;
+}
+
+/* Images */
+img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+img:hover {
+    transform: scale(1.04);
+    filter: contrast(1.1);
+}
+
+.image-row {
+    display: flex;
+    justify-content: center; /* centers the whole row */
+    gap: 20px;               /* space between images */
+    margin-top: 1.5rem;
+}
+
+.image-row img {
+    width: 200px;            /* or whatever size you want */
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
+
+.slogan {
+    max-width: 850px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+
+    font-size: 1.1rem;
+    line-height: 1.65;
+
+
+    border: none;
+
+    
+    animation: riseFade 1.2s ease;
+}
+
+/* Paragraph blocks */
+p {
+    max-width: 850px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+
+    font-size: 1.1rem;
+    line-height: 1.65;
+
+    background: rgba(255,255,255,0.06);
+    border: 2px solid rgba(255,255,255,0.15);
+
+    border-radius: 20px;
+
+    animation: riseFade 1.2s ease;
+    text-align: center;
+}
+
+.d67 {
+    max-width: 420px;
+    margin: 0 auto;
+    font-size: 0.85rem;
+}
+
+.pkmn {
+    width: 200px;            
+    height: 200px;
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffcb05;
+    background: #968d5e;
+    border: 10px solid #ffcb05;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgb(0, 0, 0);
+    margin: 1.5rem auto;    
+    text-align: center;
+    text-decoration: none;   
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+
+    background: #363636;
+    border-radius: 18px;
+    overflow: hidden;
+
+    animation: riseFade 1.2s ease;
+}
+
+th {
+    padding: 14px;
+    font-size: 1.1rem;
+    background: #464646;
+    color: #ffe280;
+}
+
+td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #555;
+    color: #f0f0f0;
+}
+
+/* Animation */
+@keyframes riseFade {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.site-footer {
+text-align: center;
+font-family: "Trebuchet MS", Verdana, sans-serif;
+color: #fff;
+}
+
+
+.site-footer h3 {
+font-size: 1.8rem;
+color: #ffe072;
+margin-bottom: 0.5rem;
+}
+
+
+.footer-links {
+margin-top: 1.2rem;
+display: flex;
+flex-direction: column;
+gap: 0.6rem;
+}
+
+
+.footer-links a {
+color: #e7dd85;
+text-decoration: none;
+font-size: 1.1rem;;
+transition: 0.25s;
+}
+
+
+.footer-links a:hover {
+filter: brightness(1.2);
+transform: translateY(-3px);
+}
+
