@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.style.padding = "20px";
         container.style.border = "2px solid #ddd";
         container.style.borderRadius = "10px";
-        container.style.background = "#fafafa";
+        container.style.background = "#363434ff";
 
         // Create image preview
         const img = document.createElement("img");
@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         img.width = 250;
         img.style.display = "block";
         img.style.marginBottom = "20px";
+        img.style.margin = "0 auto 20px auto";
 
         // Add text info
         container.innerHTML += `
