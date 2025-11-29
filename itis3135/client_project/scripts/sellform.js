@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Validation checks
         if (firstName === "" || lastName === "" || quote === "") {
-            alert("❌ Please fill out all required fields: First name, Last name, and Favorite quote.");
+            alert("❌ Please fill out all required fields: First name, Last name, and Collection link");
             return;
         }
 
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML += `
             <h3>Submission Received:</h3>
             <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-            <p><strong>Favorite Quote:</strong> "${quote}"</p>
+            <p><strong>TCGPlayer/Collectr Link:</strong> "${quote}"</p>
             ${extra ? `<p><strong>Additional Comments:</strong> ${extra}</p>` : ""}
         `;
 
