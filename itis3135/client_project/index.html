@@ -4,30 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADP TCG</title>
+
+    <!-- Your CSS -->
     <link rel="stylesheet" type="text/css" href="funny.css" />
+
+    <!-- GlideJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!-- GlideJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js" defer></script>
 </head>
 <body>
     <header>
         <div data-include="component/header.html"></div>
     </header>
+
     <main>
         <h2>Home Page</h2>
         <h3>The place to get your pokemon necessities!</h3>
-        <div class="image-row">
-            <img src="images/bw11-RC024.webp" alt="Pokemon Cards" />
-            <img src="images/misc-MEWv2.webp" alt="Pokemon Cards" />
-            <img src="images/sv3pt5-200.webp" alt="Pokemon Cards" />
-            <img src="images/swsh9-166.webp" alt="Pokemon Cards" />
-            <img src="images/sm12-157.webp" alt="Pokemon Cards" />
-            <img src="images/ecard3-H001.webp" alt="Pokemon Cards" />
-            <img src="images/g1-063.webp" alt="Pokemon Cards" />
+
+        <!-- GlideJS Carousel -->
+        <div class="glide">
+
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="images/bw11-RC024.webp" alt="Pokemon Cards"></li>
+                    <li class="glide__slide"><img src="images/misc-MEWv2.webp" alt="Pokemon Cards"></li>
+                    <li class="glide__slide"><img src="images/sv3pt5-200.webp" alt="Pokemon Cards"></li>
+                    <li class="glide__slide"><img src="images/swsh9-166.webp" alt="Pokemon Cards"></li>
+                    <li class="glide__slide"><img src="images/sm12-157.webp" alt="Pokemon Cards"></li>
+                    <li class="glide__slide"><img src="images/ecard3-H001.webp" alt="Pokemon Cards"></li>
+                    <li class="glide__slide"><img src="images/g1-063.webp" alt="Pokemon Cards"></li>
+                </ul>
+            </div>
+
+            <!-- Arrows -->
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">‹</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">›</button>
+            </div>
+
+            <!-- Bullets -->
+            <div class="glide__bullets" data-glide-el="controls[nav]"></div>
         </div>
+
         <p></p>
-        <h4>(Going to use glidejs for carousel implementation later)</h4>
+        
     </main>
+
     <footer>
         <div data-include="component/footer.html"></div>
     </footer>
+
     <script src="scripts/HTMLInclude.min.js" defer></script>
+    <script src="scripts/carousel.js" defer></script>
 </body>
 </html>

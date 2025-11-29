@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADP TCG | Sell Us Your Stuff!</title>
     <link rel="stylesheet" type="text/css" href="funny.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 </head>
 <body>
     <header>
@@ -12,11 +14,34 @@
     </header>
     <main>
         <h2>Sell Us Your Stuff!</h2>
-        <h4>(Form and Form Validation will go here in the future)</h4>
+        <h3>Please submit the form below!</h3>
+        <h4>We will pay 70-75% for singles</h4>
+
+    <form id="introForm">
+      <label for="first_name">First Name:</label><br>
+      <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required><br><br>
+      <label for="last_name">Last Name:</label><br>
+      <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required><br><br>
+      <label for="pictureInput">Pictures of your cards/collection:</label><br>
+      <input type="file" id="pictureInput" name="picture" accept="image/*"><br><br>
+      <img id="preview-image" src="images/emptyimage.png" width="200">
+      <h5><em>(A preview of the image selected will be shown above)</em></h5><br>
+      <label for="quote">Favorite Quote:</label><br>
+      <input type="text" id="quote" name="quote" placeholder="Enter your favorite quote" value="If you know how to add 99 numbers together, you will know how to add 100 numbers together." required><br><br>
+      <label for="something_to_share">Additional comments? (Optional):</label><br>
+      <input type="text" id="something_to_share" name="something_to_share" placeholder="Share additional info you'd like us to know" ><br><br>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+
     </main>
     <footer>
         <div data-include="component/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js" defer></script>
+    <script src="scripts/sellform.js" defer></script>
 </body>
 </html>
