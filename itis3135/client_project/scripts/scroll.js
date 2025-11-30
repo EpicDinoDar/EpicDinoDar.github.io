@@ -1,5 +1,5 @@
 // scroll.js
-
+// !!! Utilized ChatGPT for comment generation, and help with .reveal configs
 document.addEventListener("DOMContentLoaded", () => {
     const sr = ScrollReveal({
         distance: "60px",        // slide distance
