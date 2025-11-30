@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Name:</strong> ${firstName} ${lastName}</p>
             <p><strong>TCGPlayer/Collectr Link:</strong> "${quote}"</p>
             ${extra ? `<p><strong>Additional Comments:</strong> ${extra}</p>` : ""}
+            <h10><em>Reach out for more questions at akeatond4c@gmail.com!</em></h10>
         `;
 
         // Attach image and container to page

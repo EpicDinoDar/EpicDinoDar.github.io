@@ -213,3 +213,13 @@ form textarea {
         grid-template-columns: 1fr;
     }
 }
+
+p,
+.vendor-box /* optional: other wrappers you might have */
+article {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  height: auto !important;
+  overflow: visible !important;
+}
